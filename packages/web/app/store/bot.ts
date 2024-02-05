@@ -3,7 +3,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { LLMConfig } from "../client/platforms/llm";
 import { ChatSession, ChatMessage, createEmptySession } from "./session";
-import { DEMO_BOTS, createDemoBots, createEmptyBot } from "@/app/bots/bot.data";
+import { DEMO_BOTS, createDemoBots, createEmptyBot } from "../bots/bots.data";
 
 export type Share = {
   id: string;
@@ -164,6 +164,7 @@ export const useBotStore = create<BotStore>()(
           });
           state.currentBotId = Object.values(state.bots)[0].id;
         }
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         return state as any;
       },
     },

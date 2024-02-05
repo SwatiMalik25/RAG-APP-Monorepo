@@ -1,5 +1,5 @@
-import ConfigItem from "@/app/components/bot/bot-settings/config-item";
-import { useSidebarContext } from "@/app/components/home";
+import ConfigItem from "../components/bot/bot-settings/config-item";
+import { useSidebarContext } from "../components/home";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -9,14 +9,14 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/app/components/ui/alert-dialog";
-import { Button, buttonVariants } from "@/app/components/ui/button";
-import { Card, CardContent } from "@/app/components/ui/card";
-import { ScrollArea } from "@/app/components/ui/scroll-area";
-import { Separator } from "@/app/components/ui/separator";
-import Typography from "@/app/components/ui/typography";
-import { useToast } from "@/app/components/ui/use-toast";
-import { cn } from "@/app/lib/utils";
+} from "../components/ui/alert-dialog";
+import { Button, buttonVariants } from "../components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { ScrollArea } from "../components/ui/scroll-area";
+import { Separator } from "../components/ui/separator";
+import Typography from "../components/ui/typography";
+import { useToast } from "../components/ui/use-toast";
+import { cn } from "../lib/utils";
 import { ArchiveRestore, HardDriveDownload, X } from "lucide-react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";

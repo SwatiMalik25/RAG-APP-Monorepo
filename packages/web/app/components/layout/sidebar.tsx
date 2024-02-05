@@ -1,4 +1,4 @@
-import { ThemeToggle } from "@/app/components/layout/theme-toggle";
+import { ThemeToggle } from "./theme-toggle";
 import { Github, Settings } from "lucide-react";
 import dynamic from "next/dynamic";
 import { useNavigate } from "react-router-dom";
@@ -6,7 +6,7 @@ import { GITHUB_URL, Path } from "../../constant";
 import Locale from "../../locales";
 import { Button } from "../ui/button";
 import Typography from "../ui/typography";
-import { useSidebarContext } from "@/app/components/home";
+import { useSidebarContext } from "../../components/home";
 
 const BotList = dynamic(async () => (await import("../bot/bot-list")).default, {
   loading: () => null,

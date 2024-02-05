@@ -11,16 +11,16 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/app/components/ui/alert-dialog";
-import { cn } from "@/app/lib/utils";
-import { Button, buttonVariants } from "@/app/components/ui/button";
+} from "../../components/ui/alert-dialog";
+import { cn } from "../../lib/utils";
+import { Button, buttonVariants } from "../../components/ui/button";
 import { Github, RefreshCcw } from "lucide-react";
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
-} from "@/app/components/ui/card";
+} from "../../components/ui/card";
 
 interface IErrorBoundaryState {
   hasError: boolean;
@@ -28,7 +28,9 @@ interface IErrorBoundaryState {
   info: React.ErrorInfo | null;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export class ErrorBoundary extends React.Component<any, IErrorBoundaryState> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(props: any) {
     super(props);
     this.state = { hasError: false, error: null, info: null };
