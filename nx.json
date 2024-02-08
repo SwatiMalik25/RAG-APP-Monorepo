@@ -61,10 +61,23 @@
     },
     "@nx/next": {
       "application": {
-        "style": "css",
+        "style": "scss",
         "linter": "eslint"
       }
     }
   },
+    "plugins": [
+      {
+        "plugin": "@nx/next/plugin",
+        "options": {
+          "buildTargetName": "build",
+          "devTargetName": "dev",
+          "startTargetName": "start"
+        }
+      }
+    ]
+  
+ 
+  ,
   "nxCloudAccessToken": "YzRjZWQ5MTItM2ViMC00NGRhLWE5NzEtMTgxNjgzZTgzNGE5fHJlYWQtd3JpdGU="
 }
