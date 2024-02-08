@@ -1,5 +1,5 @@
-import { Home } from "../../components/home";
-import { Bot } from "../../store/bot";
+import { Home } from "@/app/components/home";
+import { Bot } from "@/app/store/bot";
 import { Analytics } from "@vercel/analytics/react";
 import { kv } from "@vercel/kv";
 

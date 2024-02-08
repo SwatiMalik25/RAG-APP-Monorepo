@@ -1,10 +1,10 @@
 import {
     fetchContentFromURL,
     getPDFContentFromBuffer,
-  } from "./content";
+  } from "@/app/api/fetch/content";
   import { NextResponse, NextRequest } from "next/server";
   import splitAndEmbed from "./embeddings";
-  import { URLDetailContent } from "../../client/fetch/url";
+  import { URLDetailContent } from "@/app/client/fetch/url";
   
   export async function GET(request: NextRequest) {
     const url = new URL(request.url);
@@ -97,3 +97,4 @@ import {
   
   export const runtime = "nodejs";
   export const dynamic = "force-dynamic";
+  

@@ -5,10 +5,9 @@ import stringify from "remark-stringify";
 import axios from "axios";
 import pdf from "pdf-parse";
 import { remove } from "unist-util-remove";
-import { URLDetailContent } from "../../client/fetch/url";
+import { URLDetailContent } from "@/app/client/fetch/url";
 
 function removeCommentsAndTables() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return (tree: any) => {
     remove(tree, { type: "comment" });
     remove(tree, { tagName: "table" });
@@ -19,7 +18,6 @@ async function htmlToMarkdown(html: string): Promise<string> {
   const processor = unified()
     .use(parse) // Parse the HTML
     .use(removeCommentsAndTables) // Remove comment nodes
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     .use(rehype2remark as any) // Convert it to Markdown
     .use(stringify); // Stringify the Markdown
 

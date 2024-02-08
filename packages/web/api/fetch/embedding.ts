@@ -1,8 +1,8 @@
-import { Embedding } from "../../client/fetch/url";
+import { Embedding } from "@/app/client/fetch/url";
 import {
   DATASOURCES_CHUNK_OVERLAP,
   DATASOURCES_CHUNK_SIZE,
-} from "../../../scripts/constants.mjs";
+} from "@/scripts/constants.mjs";
 import {
   Document,
   MetadataMode,

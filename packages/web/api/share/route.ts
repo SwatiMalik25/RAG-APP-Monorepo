@@ -1,7 +1,7 @@
 import { kv } from "@vercel/kv";
 import { NextRequest, NextResponse } from "next/server";
 import { nanoid } from "nanoid";
-import { Bot } from "../../store/bot";
+import { Bot } from "@/app/store/bot";
 
 const DAYS_TO_LIVE = 30;
 const TTL = 60 * 60 * 24 * DAYS_TO_LIVE;

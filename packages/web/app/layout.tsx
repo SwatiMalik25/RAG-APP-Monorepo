@@ -1,4 +1,4 @@
-import './global.css';
+import './styles/globals.css';
 import './styles/lib/highlight.css'
 import './styles/lib/markdown.css'
 import Locale from "./locales";
