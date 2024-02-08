@@ -3,9 +3,6 @@ import './styles/lib/highlight.css'
 import './styles/lib/markdown.css'
 import Locale from "./locales";
 import { type Metadata } from "next";
-//import { Toaster } from "./components/ui/toast";
-//import { ThemeProvider } from "./components/layout/theme-toggle";
-
 export const metadata: Metadata = {
   title: Locale.Welcome.Title,
   description: Locale.Welcome.SubTitle,
@@ -36,7 +33,6 @@ export default function RootLayout({
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
       <body>
-
       </body>
     </html>
   );
